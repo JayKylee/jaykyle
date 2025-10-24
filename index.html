@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee Shop | Log in</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!--Navigation-->
+    <div class="nav">
+      <a href="#home" id="home-nav">Home</a>
+      <a href="#about" id="about-nav">About us</a>
+      <a href="#contact" id="contact-nav">Contact</a>
+      <a href="#login" id="login-nav">Login</a>
+      <button id="logout-btn" style="display: none;">Logout</button>
+    </div>
+
+    <!--home-->
+    <section id="home" class="section hidden">
+      <div class="section-title">
+        <h1>HOME</h1>
+      </div>
+      <div class="section-content">
+        <img src="image.png" alt="Coffee Shop" width="200"/>
+        <p>Hi everyone! Before anything else, let me just say—I believe life is a lot like a good cup of coffee. 
+It starts off strong, sometimes a little bitter, but with the right mix of patience, passion, and maybe a little sugar, it turns into something you can really enjoy.
+Just like coffee, Im someone who brings energy, warmth, and maybe a little kick of boldness wherever I go. My name is Jay Kyle Dela Cruz, and just like your favorite brew, Im still a work in progress—but one that gets better every day.</p>
+      </div>
+    </section>
+
+    <!--about-->
+    <section id="about" class="section hidden">
+      <div class="section-title">
+        <h1>ABOUT US</h1>
+      </div>
+      <div class="section-content">
+        <p>At our coffee shop, we believe in the power of a great cup of coffee to bring people together. Every brew is crafted with care, using only the finest beans to ensure that each sip offers a unique experience. Whether you're here to catch up with friends, get some work done, or simply enjoy a moment of quiet, our cozy atmosphere is designed to inspire comfort, creativity, and meaningful connections. We take pride in every cup, knowing that a great coffee can turn an ordinary day into something special.</p>
+      </div>
+    </section>
+
+    <!--contact-->
+    <section id="contact" class="section hidden">
+      <div class="section-title">
+        <h1>CONTACT</h1>
+      </div>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Enter Your Name" required />
+        <input type="email" name="email" placeholder="Enter a Valid Email Address" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+
+    <!--login-->
+    <section id="login" class="section login">
+      <div class="section-title">
+        <h1>LOG IN</h1>
+      </div>
+      <div class="section-content">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <div class="remember-me">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <button class="login-btn" id="login-btn">Log In</button>
+        <p id="login-error" style="color: red; display: none;">Invalid credentials.</p>
+        <p><a href="#forgot" id="forgot-link">Forgot Password?</a></p>
+        <p>Don't have an account? <a href="#signup">Sign Up</a></p>
+      </div>
+    </section>
+
+    <!--sign up-->
+    <section id="signup" class="section signup hidden">
+      <div class="section-title">
+        <h1>SIGN UP</h1>
+      </div>
+      <div class="section-content">
+        <input type="text" id="signup-username" placeholder="Username" required />
+        <input type="email" id="signup-email" placeholder="Email" required />
+        <input type="password" id="signup-password" placeholder="Password" required />
+        <input type="password" id="signup-confirm-password" placeholder="Password Again" required />
+        <div class="terms">
+          <input type="checkbox" id="agree-terms" />
+          <label for="agree-terms">I agree to the terms of service</label>
+        </div>
+        <button class="login-btn" id="signup-btn">Register</button>
+        <p id="signup-error" style="color: red; display: none;">User already exists.</p>
+        <p>Already a member? <a href="#login">Log In</a></p>
+      </div>
+    </section>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
